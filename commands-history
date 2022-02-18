@@ -1,0 +1,178 @@
+    1  sudo yum install git
+    2  mkdir gitdemo
+    3  ll
+    4  cd gitdemo/
+    5  ll
+    6  git status
+    7  git init
+    8  ll
+    9  git status
+   10  touch index.html
+   11  vi index.html
+   12  cat index.html
+   13  git status
+   14  git add index.html
+   15  git status
+   16  git commit -m "This is my demo blog"
+   17  git config --global --edit
+   18  git commit --amend --reset-author
+   19  git config --global --edit
+   20  git status
+   21  git log
+   22  ll
+   23  vi index.html
+   24  git status
+   25  git add index.html
+   26  git status
+   27  git commit -m "index.html file modified some changes"
+   28  git log
+   29  git config --global user.name "amar-m-cloud"
+   30  git config --global user.email "amarmattaparthi.aws@gmail.com"
+   31  git commit --amend --reset-author
+   32  cd
+   33  d
+   34  ll
+   35  cd
+   36  pwd
+   37  git clone /ec2-user
+   38  git clone https://github.com/amar-m-cloud/nov-batch.git
+   39  ll
+   40  cd nov-batch/
+   41  ll
+   42  cd
+   43  ls
+   44  cd nov-batch/
+   45  ls
+   46  touch index.html
+   47  cd
+   48  cd gitdemo/
+   49  cat index.html
+   50  cd
+   51  cd nov-batch/
+   52  ll
+   53  vi index.html
+   54  git status
+   55  git add index.html
+   56  git status
+   57  git commit -m "this is remote repository"
+   58  git status
+   59  git push
+   60  git branch
+   61  git branch -a
+   62  cd
+   63  cd gitdemo/
+   64  git branch -a
+   65  ll
+   66  sudo rm -r *
+   67  ll
+   68  mkdir gitproject
+   69  ll
+   70  cd gitproject/
+   71  pwd
+   72  mkdir mylocalrepo
+   73  cd mylocalrepo/
+   74  pwd
+   75  git init
+   76  cd .git/
+   77  ll
+   78  cd..
+   79  cd ..
+   80  git status
+   81  touch file1 file2 file3
+   82  git status
+   83  git add .
+   84  git status
+   85  git commit -m "created repo with some sample files"
+   86  git status
+   87  git log
+   88  cd ..
+   89  ll
+   90  tree
+   91  cd
+   92  ll
+   93  sudo yum install tree
+   94  ll
+   95  tree gitproject/
+   96  cg gitproject/
+   97  cd gitproject/
+   98  git clone file1
+   99      ├── file2
+  100      └── file3
+  101  git clone https://github.com/amar-m-cloud/myremoterepo.git
+  102  cd
+  103  tree gitproject/
+  104  cd gitproject/
+  105  cd myremoterepo/
+  106  ll
+  107  git status
+  108  git branch
+  109  git branch -a
+  110  touch abc bcd cde def
+  111  git status
+  112  git add .
+  113  git status
+  114  git commit -m "midified with some files"
+  115  git status
+  116  touch xyz
+  117  git add xyz
+  118  git status
+  119  git commit -m "added one more file"
+  120  git status
+  121  ll
+  122  rm -r abc
+  123  git status
+  124  git commit -m "one file deleted"
+  125  git add
+  126  git add abc
+  127  git status
+  128  rm -r xyz
+  129  ll
+  130  git status
+  131  git rm xyz
+  132  git status
+  133  git commit -m "modified some changes"
+  134  git status
+  135  git log
+  136  git push
+  137  cd
+  138  ll
+  139  cd gitproject/
+  140  ll
+  141  cd mylocalrepo/
+  142  git remote add origin https://github.com/amar-m-cloud/mylocalrepo.git
+  143  git status
+  144  git branch -M main
+  145  git status
+  146  git branch -a
+  147  git push -u origin main
+  148  cd
+  149  cd gitproject/
+  150  ll
+  151  cd myremoterepo/
+  152  ll
+  153  git status
+  154  git pull
+  155  git status
+  156  git branch -a
+  157  git checkout feature
+  158  git status
+  159  git branch -a
+  160  touch amar
+  161  git add amar
+  162  git status
+  163  git commit -m "new file added in feature branch"
+  164  git status
+  165  git push
+  166  git branch -a
+  167  git checkout main
+  168  git status
+  169  git pull
+  170  ls
+  171  ll
+  172  git status
+  173  git branch
+  174  git branch -a
+  175  git checkout feature
+  176  ll
+  177  cd
+  178  history
